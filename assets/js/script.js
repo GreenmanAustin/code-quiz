@@ -233,7 +233,11 @@ var answerHandler = function (event) {
             isCorrect("Correct!");
         } else {
             isCorrect("Wrong!");
-            timeLeft = timeLeft - 10;
+            if (timeLeft > 10) {
+                timeLeft = timeLeft - 10;
+            } else {
+                timeLeft = 0;
+            }
         }
         questionNumber++;
         setTimeout(displayQuestions, 1000);
