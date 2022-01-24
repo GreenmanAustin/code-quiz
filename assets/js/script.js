@@ -11,6 +11,7 @@ var questionNumber = 0;
 var gameCompleted = false;
 var timeInterval;
 
+// "questions" object contains the information related to the quiz questions.
 let questions = [
     {
         "key": 1,
@@ -124,6 +125,8 @@ let questions = [
     },
 ];
 
+
+// Function to create a "li" element for each top score and append it to the "ul" element for display.
 var displayScores = function (scoreList) {
     for (var i = 0; i < scoreList.length; i++) {
         var scoreEntry = document.createElement("li");
@@ -135,10 +138,12 @@ var displayScores = function (scoreList) {
 
 }
 
+// This is called when the "go back" button is pressed on the element displaying the high scores.  This function restarts the game.
 var goBackFunction = function () {
     location.reload();
 }
 
+// Function obtains the high scores from localStorage and updates it with the current score, sorts the array based on scores, and stores the updated array into localStorage.
 var highScoresPage = function () {
     firstPage.className += " hide";
     questionPages.className += " hide";
@@ -186,7 +191,7 @@ var highScoresPage = function () {
 
 }
 
-
+// this function is called after the quiz is over.  Displays the necessary elements to provide the user a place to enter their initials and give the user their score.
 var allDone = function () {
     console.log("all done");
     document.getElementById("questions").className += " hide";
@@ -197,6 +202,7 @@ var allDone = function () {
 
 }
 
+// this creates the timer for the quiz
 function countDown() {
     timeInterval = setInterval(function () {
         if (timeLeft > 0 && questionNumber < questions.length) {
@@ -211,10 +217,13 @@ function countDown() {
     }, 1000);
 };
 
+// this function displays whether the user got the question correct or wrong.
 var isCorrect = function (correctness) {
     displayCorrectness.style.visibility = "visible";
     displayCorrectness.textContent = correctness;
 }
+
+// this function checks to see if the user got the answer to a question correct or incorrect, and based on that, makes any deduction to the timer and then calls a function to display whether the user got the answer correct or incorrect.  
 
 var answerHandler = function (event) {
     var targetEl = event.target.getAttribute("data-choice-id");
@@ -230,6 +239,8 @@ var answerHandler = function (event) {
         setTimeout(displayQuestions, 1000);
     }
 }
+
+// This function goes through each question, displays the question, enters the user's response and then takes certain actions based on the users response.
 
 var displayQuestions = function () {
     if ((questionNumber < questions.length) && (timeLeft > 0)) {
@@ -258,7 +269,7 @@ var displayQuestions = function () {
 
 
 
-
+// this function starts the quiz
 var startQuiz = function () {
     console.log("quiz has started");
     firstPage.className += " hide";
@@ -273,5 +284,5 @@ var startQuiz = function () {
 }
 
 
-
+// This listens to see if the start quiz button is triggered.
 startBtnEl.addEventListener("click", startQuiz);
