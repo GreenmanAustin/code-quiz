@@ -71,7 +71,7 @@ header a {
     margin-top: 10px;
     position: relative;
     left: 15%;
-    width: 220px;
+    width: 300px;
     text-align: left;
     padding-left: 10px;
 }
@@ -88,4 +88,126 @@ header a {
     margin-top: 5%;
     font-size: 25px;
     left: 15%   
+}
+
+.hide {
+    display:none;
+}
+.all-done h2 {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 5%;
+    font-size: 40px;
+    width: 100%;
+}
+
+.all-done p {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 5%;
+    font-size: 30px;
+    width: 100%;
+}
+
+.initials {
+    display: flex;
+    padding-left: 15%;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.initals-text {
+    font-size: 30px;
+}
+
+.user-initials, .initials-submit {
+    margin-left:15px;
+}
+
+.user-initials {
+    border:3px solid rgb(23, 4, 163);
+    width:30%;
+    height: 50px;
+    font-size: 25px;
+    align-items: center;
+    padding-left:15px;
+
+}
+
+.initials-submit {
+    background:rgb(23, 4, 163);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+
+.initials-submit:hover {
+    background:rgb(187, 91, 184);
+}
+
+.high-scores {
+    margin-top: 20%;
+}
+.high-scores h2 {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 5%;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom:0px;
+}
+
+.score-list {
+    list-style: none;
+    margin-left: 15%;
+    padding: 10px;
+    margin-top: 0px;
+  
+    
+}
+
+.score {
+    margin-bottom: 10px;
+    background-color: rgb(224, 201, 248);
+    line-height: 50px;
+    font-size: 25px;
+    width: 80%
+} 
+
+.score-buttons {
+    margin-left: 15%;
+}
+
+.goback {
+    background:rgb(23, 4, 163);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 130px;
+    text-align: center;
+    margin-right:30px;
+}
+
+.goback:hover {
+    background:rgb(187, 91, 184);
+}
+
+
+.clear-scores {
+    background:rgb(23, 4, 163);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+}
+
+.clear-scores:hover {
+    background:rgb(187, 91, 184);
 }

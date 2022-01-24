@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <a class="high-score-link" href="./high-score.html">View high scores</a>
+    <header id="page-header">
+        <a class="high-score-link" href="#" onclick="highScoresPage();return false;">View high scores</a>
         <div id="timer">Time: 0</div>
     </header>
     <main>
@@ -26,6 +26,23 @@
             <h2 class="question" id="question"></h2>
             <div class="answers" id="answers"></div>
             <div class="correctness" id="correctness"></div>
+        </section>
+        <section class="all-done hide" id="all-done">
+            <h2>All Done!</h2>
+            <p class="your-score" id="your-score"></p>
+            <div class="initials" id="initials">
+                <span class="initals-text">Enter initials:</span>
+                <input type="text" class="user-initials" id="user-initials" name="user-initials">
+                <button class="initials-submit" id="initials-submit">Submit</button>
+            </div>
+        </section>
+        <section class="high-scores hide" id="high-scores">
+            <h2>Top 5 high scores</h2>
+            <ul class="score-list" id="score-list"></ul>
+            <div class="score-buttons" id="score-buttons">
+                <button class="goback" id="goback">Go back</button>
+                <button class="clear-scores" id="clear-scores">Clear high scores</button>
+            </div>
         </section>
 
 
