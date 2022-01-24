@@ -1,6 +1,6 @@
 # Code Quiz
 
-In this project, I wrote code for a timed quiz about certain web coding related concepts.  The user had to answer 5 questions within one minute, and received a deduction of ten seconds for each wrong answer.  The user's score was equal to the number of seconds remaining at the end of the quiz. The project included responsive styling, dynamically created html using JavaScript, and persistence of top scores using local storage.  
+In this project, I wrote code for a timed quiz about certain web coding related concepts.  The user must answer 5 questions within one minute, and will receive a deduction of ten seconds for each wrong answer.  The user's score is equal to the number of seconds remaining at the end of the quiz. The project involves responsive styling, dynamically created html using JavaScript, and persistence of top scores using local storage.  
 
 ## Deployment
 
