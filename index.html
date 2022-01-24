@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    <!-- Header. Contains the link to the high-score page and the timer -->
     <header id="page-header">
         <a class="high-score-link" href="#" onclick="highScoresPage();return false;">View high scores</a>
         <div id="timer">Time: 0</div>
     </header>
     <main>
+        <!-- This section contains the first page the viewer see when starting the quiz - the quiz start page -->
         <section class="first-page" id="first-page">
             <h1 class="quiz-title">Coding Quiz Challenge</h1>
             <h2 class="quiz-instruct">
@@ -22,11 +24,14 @@
                 incorrect answers will penalize your score/time by ten seconds!</h2>
             <button class="start-quiz-btn" id="start-quiz-btn" type="button">Start Quiz</button>
         </section>
+        <!-- This section displays the quiz questions that are dynamically added using JS -->
         <section class="questions" id="questions">
             <h2 class="question" id="question"></h2>
             <div class="answers" id="answers"></div>
+            <!-- This DIV contains the text which lets the user know if she got the question correct or wrong -->
             <div class="correctness" id="correctness"></div>
         </section>
+        <!-- This section contains the page after the quiz is done.  The user is given his/her score and asked for the user's initials -->
         <section class="all-done hide" id="all-done">
             <h2>All Done!</h2>
             <p class="your-score" id="your-score"></p>
@@ -36,6 +41,7 @@
                 <button class="initials-submit" id="initials-submit">Submit</button>
             </div>
         </section>
+        <!-- This section displays the high-score list and contains two buttons, one which lets the user re-start the quiz and the other which clears the high-score list -->
         <section class="high-scores hide" id="high-scores">
             <h2>Top 5 high scores</h2>
             <ul class="score-list" id="score-list"></ul>
@@ -44,10 +50,6 @@
                 <button class="clear-scores" id="clear-scores">Clear high scores</button>
             </div>
         </section>
-
-
-
-
     </main>
     <script src="./assets/js/script.js"></script>
 </body>

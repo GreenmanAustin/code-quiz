@@ -56,9 +56,6 @@ header a {
     width: 100%;
 }
 
-.answers {
-}
-
 .choiceButton {
     display:block;
     outline: none;
@@ -90,9 +87,7 @@ header a {
     left: 15%   
 }
 
-.hide {
-    display:none;
-}
+/* This section contains the styling for the All-Done page which occurs after the quiz is completed */
 .all-done h2 {
     text-align: left;
     padding-left: 15%;
@@ -149,6 +144,7 @@ header a {
     background:rgb(187, 91, 184);
 }
 
+/* This Section contains the styling for the high-scores page */
 .high-scores {
     margin-top: 20%;
 }
@@ -210,4 +206,9 @@ header a {
 
 .clear-scores:hover {
     background:rgb(187, 91, 184);
+}
+
+/* Utility */
+.hide {
+    display:none;
 }
