@@ -146,7 +146,7 @@ header a {
 
 /* This Section contains the styling for the high-scores page */
 .high-scores {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .high-scores h2 {
     text-align: left;
@@ -171,7 +171,7 @@ header a {
     background-color: rgb(224, 201, 248);
     line-height: 50px;
     font-size: 25px;
-    width: 80%
+    max-width: 500px;
 } 
 
 .score-buttons {
